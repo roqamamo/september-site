@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عطور سبتمبر المميزة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://thumbs2.imgbox.com/ff/3d/B2GKiz4g_t.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f8f8f8;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            border-bottom: 2px solid #d4af37;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            color: #d4af37;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #e0c97a;
+            margin-bottom: 20px;
+        }
+        
+        .month-highlight {
+            background: rgba(212, 175, 55, 0.15);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            border: 1px dashed #d4af37;
+        }
+        
+        .perfume-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .perfume-card {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #d4af37;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .perfume-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+        }
+        
+        .perfume-name {
+            color: #d4af37;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 1px solid #d4af37;
+            padding-bottom: 10px;
+        }
+        
+        .perfume-type {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            align-self: flex-start;
+        }
+        
+        .women {
+            background: rgba(219, 112, 147, 0.3);
+            color: #ffb6c1;
+        }
+        
+        .men {
+            background: rgba(30, 144, 255, 0.3);
+            color: #87cefa;
+        }
+        
+        .ingredients {
+            margin: 15px 0;
+            flex-grow: 1;
+        }
+        
+        .ingredients h3 {
+            color: #d4af37;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .ingredients ul {
+            list-style-type: none;
+            padding-right: 15px;
+        }
+        
+        .ingredients li {
+            margin-bottom: 8px;
+            padding-right: 20px;
+            position: relative;
+        }
+        
+        .ingredients li:before {
+            content: "•";
+            color: #d4af37;
+            font-weight: bold;
+            position: absolute;
+            right: -15px;
+        }
+        
+        .featured {
+            background: linear-gradient(45deg, rgba(212, 175, 55, 0.2), rgba(212, 175, 55, 0.1));
+            border: 2px solid #d4af37;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .featured-content {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .featured-image {
+            flex: 1;
+            max-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .featured-details {
+            flex: 2;
+        }
+        
+        .featured:before {
+            content: 'الأكثر مبيعاً';
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: #d4af37;
+            color: #000;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .meaning {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            border-right: 3px solid #d4af37;
+        }
+        
+        .meaning h3 {
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+        
+        .duration {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            color: #e0c97a;
+        }
+        
+        .duration i {
+            margin-left: 10px;
+            color: #d4af37;
+        }
+        
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            border: 1px solid #d4af37;
+        }
+        
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(45deg, #d4af37, #f1e5ac);
+            color: #000;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+        }
+        
+        .contact-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+        }
+        
+        .contact-btn i {
+            margin-left: 10px;
+        }
+        
+        .golden-lotus {
+            color: #d4af37;
+            font-size: 2rem;
+            margin-left: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #e0c97a;
+            border-top: 1px solid #d4af37;
+        }
+        
+        /* تحسينات للتجاوب مع جميع الأجهزة */
+        @media (max-width: 992px) {
+            .featured-content {
+                flex-direction: column;
+            }
+            
+            .featured-image {
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .perfume-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .featured:before {
+                top: 10px;
+                left: 10px;
+                font-size: 0.7rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .perfume-name {
+                font-size: 1.5rem;
+            }
+            
+            .contact-btn {
+                padding: 12px 25px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>العطور الخاصة بشهر سبتمبر</h1>
+            <p class="subtitle">أحدث التصميمات العطرية التي تم تركيبها وابتكارها بعناية فائقة</p>
+            
+            <div class="month-highlight">
+                <p>خصومات خاصة طوال شهر سبتمبر على جميع العطور</p>
+            </div>
+        </header>
+        
+        <div class="perfume-grid">
+            <!-- العطر الجديد ELARIA -->
+            <div class="perfume-card featured">
+                <h2 class="perfume-name">ELARIA</h2>
+                
+                <div class="featured-content">
+                    <div class="featured-image">
+                        <img src="https://thumbs2.imgbox.com/ff/3d/B2GKiz4g_t.jpg" alt="عطر إيلاريا">
+                    </div>
+                    
+                    <div class="featured-details">
+                        <span class="perfume-type women">نسائي</span>
+                        
+                        <div class="ingredients">
+                            <h3>المكونات الرئيسية:</h3>
+                            <ul>
+                                <li>ندى الفجر</li>
+                                <li>الأوركيد وجوز الهند</li>
+                                <li>خشب الصندل</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="meaning">
+                            <h3>معنى الاسم:</h3>
+                            <p>إيلاريا هي روح موسيقية قديمة من عالم لحن الزمن الأول، كانت من قبل أن يخلق الصوت البشري الأول. تسكن في الرياح وتغني بصمتها في الأرواح القديمة الباحثة عن الحقيقة، واليوم قررت العودة للغناء عن طريق SOLORIA.</p>
+                        </div>
+                        
+                        <div class="duration">
+                            <i class="fas fa-clock"></i>
+                            <span>تبقى الرائحة وتدوم لأكثر من 40 ساعة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- العطور الأساسية -->
+            <div class="perfume-card">
+                <h2 class="perfume-name">Lattafa Khamrah</h2>
+                <span class="perfume-type women">نسائي</span>
+                <div class="ingredients">
+                    <h3>المكونات الرئيسية:</h3>
+                    <ul>
+                        <li>القرفة</li>
+                        <li>جوزة الطيب</li>
+                        <li>الفانيليا واللوز</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="perfume-card">
+                <h2 class="perfume-name">Gucci Flora</h2>
+                <span class="perfume-type women">نسائي</span>
+                <div class="ingredients">
+                    <h3>المكونات الرئيسية:</h3>
+                    <ul>
+                        <li>زهرة الكمثرى</li>
+                        <li>البرغموت</li>
+                        <li>زهور الأوركيد</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="perfume-card">
+                <h2 class="perfume-name">Victoria's Secret Bombshell</h2>
+                <span class="perfume-type women">نسائي</span>
+                <div class="ingredients">
+                    <h3>المكونات الرئيسية:</h3>
+                    <ul>
+                        <li>البرغموت</li>
+                        <li>إبرة الراعي</li>
+                        <li>زهرة الزنبق</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="perfume-card">
+                <h2 class="perfume-name"> Yara</h2>
+                <span class="perfume-type women">نسائي</span>
+                <div class="ingredients">
+                    <h3>المكونات الرئيسية:</h3>
+                    <ul>
+                        <li>الفواكه الاستوائية</li>
+                        <li>زهرة الأوركيد</li>
+                        <li>المسك والفانيليا</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="perfume-card">
+                <h2 class="perfume-name">Burberry Her</h2>
+                <span class="perfume-type women">نسائي</span>
+                <div class="ingredients">
+                    <h3>المكونات الرئيسية:</h3>
+                    <ul>
+                        <li>توت العليق الأحمر</li>
+                        <li>الكشمش الأسود</li>
+                        <li>خشب الأرز والمسك</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="perfume-card">
+                <h2 class="perfume-name">Armani Stronger With You</h2>
+                <span class="perfume-type men">رجالي</span>
+                <div class="ingredients">
+                    <h3>المكونات الرئيسية:</h3>
+                    <ul>
+                        <li>الفلفل الوردي</li>
+                        <li>الكستناء المحروق</li>
+                        <li>خشب العود واللبان</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="perfume-card">
+                <h2 class="perfume-name">Versace Eros</h2>
+                <span class="perfume-type men">رجالي</span>
+                <div class="ingredients">
+                    <h3>المكونات الرئيسية:</h3>
+                    <ul>
+                        <li>النعناع</li>
+                        <li>التفاح الأخضر</li>
+                        <li>الفانيليا وخشب الأرز</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="perfume-card">
+                <h2 class="perfume-name">Creed Aventus</h2>
+                <span class="perfume-type men">رجالي</span>
+                <div class="ingredients">
+                    <h3>المكونات الرئيسية:</h3>
+                    <ul>
+                        <li>الأناناس</li>
+                        <li>التفاح الأسود</li>
+                        <li>البوتشولي والمسك</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="perfume-card">
+                <h2 class="perfume-name">NEW Black</h2>
+                <span class="perfume-type men">رجالي</span>
+                <div class="ingredients">
+                    <h3>المكونات الرئيسية:</h3>
+                    <ul>
+                        <li>الروم</li>
+                        <li>خشب الغاياك</li>
+                        <li>التبغ والفانيليا</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact">
+            <h2>للطلب أو الاستفسار</h2>
+            <p>تواصل معنا عبر الواتساب:</p>
+            <a href="https://wa.me/962780741318" class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                0780741318
+            </a>
+            <p style="margin-top: 15px; font-size: 0.9rem; color: #e0c97a;">انقر على الرقم للتواصل عبر الواتساب</p>
+        </div>
+ <footer>
+            <p>© 2025 جميع الحقوق محفوظة | عطور SOLORIA</p>
+        </footer>
+    </div>
+
+    <script>
+        // إضافة تأثيرات تفاعلية بسيطة
+        document.addEventListener('DOMContentLoaded', function() {
+            const perfumeCards = document.querySelectorAll('.perfume-card');
+            
+            perfumeCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 0 20px rgba(212, 175, 55, 0.6)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 0 15px rgba(212, 175, 55, 0.3)';
+                });
+
+});
+            
+            // التأكد من أن رابط الواتساب يعمل بشكل صحيح
+            const whatsappBtn = document.querySelector('.whatsapp-btn');
+            whatsappBtn.addEventListener('click', function() {
+                window.open('https://wa.me/962780741318', '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
